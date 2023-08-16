@@ -1,9 +1,8 @@
 "use client";
-import { validationAtom } from "@/atoms/validation";
-import { useAtomValue } from "jotai";
+import { useValidationPassed } from "@/hooks/useValidationPassed";
 
 export default function Home() {
-  const validationResult = useAtomValue(validationAtom);
+  const validationResult = useValidationPassed();
 
   if (
     !validationResult ||
