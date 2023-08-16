@@ -14,7 +14,17 @@ export default function Home() {
 
   return (
     <main>
-      <p>良さ👏</p>
+      <p>
+        まだなにもないです。
+        <a
+          href="https://tinykitten.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ここ
+        </a>
+        でも見ててください。
+      </p>
     </main>
   );
 }
