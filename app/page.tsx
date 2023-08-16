@@ -5,9 +5,10 @@ export default function Home() {
   const validationResult = useValidationPassed();
 
   if (
-    !validationResult ||
-    !validationResult.valid ||
-    validationResult.hasError
+    (!validationResult ||
+      !validationResult.valid ||
+      validationResult.hasError) &&
+    process.env.NODE_ENV !== "development"
   ) {
     return <p>だーめ</p>;
   }
